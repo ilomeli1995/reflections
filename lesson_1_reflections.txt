@@ -1,0 +1,56 @@
+1) How did viewing a diff between two versions of a file help you
+spot the bug?
+
+It was helpful, because you can see where exactly you made
+changes, this isolates the bug and comparing becomes an easy way
+to find errors.
+
+2) How could having easy access to the entire history of a file make
+a more efficient programmer in the long term?
+
+Well, sometimes we have to make updates to the old versions of the 
+program, by doing so, we can add bugs to the program, being able to 
+compare versions of the same file could help us isolate the bug and 
+identify it more easily and quickly delete them.
+
+3) What do you think are the pros and cons of manually choosing when 
+to create a commit, like you do in Git, vs having versions 
+automatically saved, like Google Docs does?
+
+Pros: You have control on your versions, you know exactly what you 
+have changed and can keep saving the file when a logical change has 
+been done.
+
+Cons: If you forgot to save the change and you accidentally close 
+the file, you might lose some progress.
+
+4) Why do you think some version control systems, like Git, allow 
+saving multiple files in one commit, while others, like Google Docs, 
+treat each file separately?
+
+Because Git is more code-oriented, and that makes the platform aware 
+that some changes may afect several files, being able to see the 
+differences between all of the files affected, allows us to identify 
+bugs quicker and easier.
+
+5) How can you use the commands git log and git diff to view the 
+history of files?
+
+Git log will help us to identify our commit history, here we can 
+find the commit ID and the info-about-the-commit comment, once 
+identified the commits we want to compare, we use git diff to 
+identify the differences between those files.
+
+6) How might using version control make you more confident to make 
+changes that could break something?
+
+It improves your confidence by allowing you to run code of the 
+different versions, that way you can find where the bug was 
+intrduced without wasting time looking for the bug in places where 
+it is not.
+
+7) Now that you have your workspace set up, what do you want to try 
+using Git for?
+
+I want to use Git for writing code, making commits and start using 
+Git as my default version-control tool.
