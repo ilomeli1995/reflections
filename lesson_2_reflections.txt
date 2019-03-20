@@ -19,19 +19,43 @@ It allows us to define exactly what files we want to keep track of,
 before making a commit.
 
 How can you use the staging area to make sure you have one commit 
-per logical
-change?
+per logical change?
+
+The staging area alone does not give us anything to check the 
+updated files with the current files, we have to ask for help to 
+"git diff", using git diff with no arguments allows us to compare 
+the files in the staging area to those modified in the working 
+directory. We can also use git diff --staged to identify the changes 
+introduced in the updated version vs the most recent commit. Using 
+this, we can make sure that the commit will introduce just one 
+change, and if we accidentally added more changes, we can identify 
+them and remove them from the current staging area.
 
 What are some situations when branches would be helpful in keeping 
-your history
-organized? How would branches help?
+your history organized? How would branches help?
+
+Branches help us when we want to create different versions of the 
+same program but still want to keep track of the original project, 
+having different branches helps us to change the behavior of the 
+original program, and at the same time be able to have an original 
+version.
 
 How do the diagrams help you visualize the branch structure?
 
+It allows us to visualize the order the commits where done, if a new 
+branch was created at some point, we will be able to identify in 
+what commit that branch was created, and if it is the case, we can 
+see all the commits in the previous branch that were made afterthe 
+new branch was created.
+
 What is the result of merging two branches together? Why do we 
-represent it in
-the diagram the way we do?
+represent it in the diagram the way we do?
+
+We create a new node where the two branches are linked together, 
+we did not combine the two branches to make one, both branches 
+are now connected to the same node. And it is represented that 
+way, because those branches were worked independently from one 
+another.
 
 What are the pros and cons of Git's automatic merging vs. always 
-doing merges
-manually?
+doing merges manually?
